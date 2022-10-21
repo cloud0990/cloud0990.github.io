@@ -40,6 +40,7 @@ local.properties
 
 # sbteclipse plugin
 .target
+/target
 
 # Tern plugin
 .tern-project
@@ -100,15 +101,13 @@ replay_pid*
 /pom.xml
 .gitignore
 .properties
-TestProjects/target/
-TestProjects/mvnw.cmd
-TestProjects/pom.xml
-TestProjects/mvnw
-TestProjects/logs/
+cloud_github_io/target/
+cloud_github_io/mvnw.cmd
+cloud_github_io/pom.xml
+cloud_github_io/mvnw
+cloud_github_io/logs/
+cloud_github_io/HELP.md
 *.project
-JavaScriptTest/mvnw
-JavaScriptTest/mvnw.cmd
-JavaScriptTest/pom.xml
 
 application.properties
 application-local.properties
