@@ -1,3 +1,72 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches/build_file_checksums.ser
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+/.metadata/
+
+### Eclipse ###
+/Servers/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# sbteclipse plugin
+.target
+/target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+### Eclipse Patch ###
+# Spring Boot Tooling
+.sts4-cache/
+
+### Java ###
 # Compiled class file
 *.class
 
@@ -6,9 +75,6 @@
 
 # BlueJ files
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -21,3 +87,30 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+replay_pid*
+
+# End
+*.sql
+
+.classpath
+.xml
+.springBeans
+.mvn
+/mvnw
+/mvnw.cmd
+/pom.xml
+.gitignore
+.properties
+cloud_github_io/target/
+cloud_github_io/mvnw.cmd
+cloud_github_io/pom.xml
+cloud_github_io/mvnw
+cloud_github_io/logs/
+cloud_github_io/HELP.md
+*.project
+
+application.properties
+application-local.properties
+application-real.properties
+log4jdbc.log4jdbc.properties
+logback-spring.xml
