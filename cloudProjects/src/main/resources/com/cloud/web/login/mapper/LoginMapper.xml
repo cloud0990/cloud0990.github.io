@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cloud.web.login.mapper.LoginMapper">
+	
+	<select id="getQueryTotalCnt" resultType="int">
+	/* LoginMapper.getQueryTotalCnt */	
+		SELECT FOUND_ROWS()
+	</select>
+
+	<select id="checkLoginUser" parameterType="java.util.HashMap" resultType="com.cloud.web.common.domain.SessionVo">
+	/* LoginMapper.checkLoginUser */
+		SELECT 
+				  USER_IDX AS user_idx
+				, USER_ID AS user_id 
+				, USER_PWD AS user_pwd
+				, USER_NM AS user_nm
+		FROM 
+			TB_USER
+		WHERE 1=1 
+		AND USER_ID = #{user_id}
+		AND USER_PWD = #{user_pwd}
+	</select>
+	
+	<select id="chkUserNm" parameterType="hashMap" resultType="int">
+	/* LoginMapper.chkUserNm */
+		SELECT 
+			COUNT(1)
+		FROM TB_USER
+		WHERE USER_NM = #{user_nm}
+	</select>
+	
+	<insert id="createloginHist" parameterType="hashMap">
+	/* LoginMapper.createloginHist */
+		INSERT INTO
+		TB_LOGIN_LOG(LOG_USER_ID, LOG_USER_IP, LOG_USER_NM, LOG_TP_YN , LOG_DATE)
+		VALUES(
+				  #{log_user_id}
+				, #{log_user_ip}
+				, #{log_user_nm}
+				, #{log_tp_yn}
+				, NOW()
+			   )
+	</insert>
+	
+</mapper>

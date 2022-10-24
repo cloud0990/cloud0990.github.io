@@ -38,10 +38,6 @@ local.properties
 # Java annotation processor (APT)
 .factorypath
 
-# sbteclipse plugin
-.target
-/target
-
 # Tern plugin
 .tern-project
 
@@ -101,12 +97,12 @@ replay_pid*
 /pom.xml
 .gitignore
 .properties
-cloud_github_io/target/
-cloud_github_io/mvnw.cmd
-cloud_github_io/pom.xml
-cloud_github_io/mvnw
-cloud_github_io/logs/
-cloud_github_io/HELP.md
+/target
+/mvnw.cmd
+/pom.xml
+/mvnw
+/logs/
+/HELP.md
 *.project
 
 application.properties
